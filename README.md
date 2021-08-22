@@ -1,8 +1,8 @@
 # Linux
 
-# Debian
+## Debian
 
-## Temperature sensors
+### Temperature sensors
 sudo apt install lm-sensors
 sudo sensors-detect
 sensors
@@ -12,7 +12,7 @@ sudo apt install hddtemp
 hddtemp
 sudo hddtemp SATA:/dev/sda
 
-# Raspberry Pi
+## Raspberry Pi
 vcgencmd get_throttled
 Bit field
 0: under-voltage

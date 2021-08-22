@@ -12,7 +12,12 @@ sudo apt install hddtemp
 hddtemp
 sudo hddtemp SATA:/dev/sda
 
+cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
+sudo cat /sys/devices/system/cpu/cpufreq/policy0/cpuinfo_cur_freq
+
 ## Raspberry Pi
+vcgencmd measure_clock arm
+
 vcgencmd get_throttled
 Bit field
 0: under-voltage

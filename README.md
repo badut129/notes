@@ -42,3 +42,8 @@ Bit field
 
 18: throttling has occurred
 
+
+ctrl+alt+F1
+
+sudo /etc/init.d/lightdm stop
+

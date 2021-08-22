@@ -23,7 +23,15 @@ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
 
 sudo cat /sys/devices/system/cpu/cpufreq/policy0/cpuinfo_cur_freq
 
+### Change swap file size
+sudo dphys-swapfile swapoff
+
+As root, edit the file /etc/dphys-swapfile and modify the variable CONF_SWAPSIZE=1024
+
+sudo dphys-swapfile swapon
+
 ## Raspberry Pi
+### VideoCore monitoring
 vcgencmd measure_clock arm
 
 vcgencmd get_throttled
@@ -42,8 +50,9 @@ Bit field
 
 18: throttling has occurred
 
-
+### Get back to cmd line only
 ctrl+alt+F1
 
 sudo /etc/init.d/lightdm stop
+
 

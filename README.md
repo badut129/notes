@@ -57,4 +57,7 @@ ctrl+alt+F1
 
 sudo /etc/init.d/lightdm stop
 
+### Useful links
+https://blog.vpetkov.net/2020/03/30/raspberry-pi-netflix-one-line-easy-install-along-with-hulu-amazon-prime-disney-plus-hbo-spotify-pandora-and-many-others/
+https://debugger.medium.com/my-impressions-on-using-a-raspberry-pi-4-as-a-desktop-replacement-ff677c885149
 

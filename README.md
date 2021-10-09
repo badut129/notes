@@ -1,3 +1,16 @@
+# CMake
+Check if cmake was run as Debug or Release build type
+
+cmake -L . | grep CMAKE_BUILD_TYPE
+
+or add to CMakeLists.txt
+
+add_custom_target(
+    print_build_type 
+    COMMAND ${CMAKE_COMMAND} -E echo $<$<CONFIG:>:Undefined>$<$<NOT:$<CONFIG:>>:$<CONFIG>>
+)
+
+
 # Linux
 
 ## Debian
